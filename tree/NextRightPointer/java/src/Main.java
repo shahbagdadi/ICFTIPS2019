@@ -28,7 +28,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
         Main m = new Main();
         Node n20 = new Node(20);
         Node n30 = new Node(30);
