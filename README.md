@@ -10,25 +10,25 @@ Code repository for algorithm and data structure problems discussed during ICF T
 ## Steps to submit code for review
 1. Clone the repo (initial)
 2. Get the latest from master.
-``` 
-git checkout master   
-git pull 
-```
+    ``` 
+    git checkout master   
+    git pull 
+    ```
 3. Create a branch with your name. The branch should follow the Naming Convention : **YourName**. 
-``` git checkout -b <YourName>
-    example - git checkout -b shahnawaz
- ```
- As new problems are posted in master, do a ```git merge master``` in your branch to get the latest problems.
+    ``` git checkout -b <YourName>
+        example - git checkout -b shahnawaz
+    ```
+    
 4. Work on the problem and commit your code to your branch. **Include the time and space complexity as a comment in your source code** like below
-```     
-    // T - O(n) where n is the number of elements
-    // S - O(log n) where n is the number of elements
-```
-Commit the code to your branch. Make sure your code is compilable and successfully executes at least all the test cases given with the problem.
-```
-git status
-git add <some-file>
-git commit -m <A meaningful message>
-git push origin <YourName>
-```
+    ```     
+        // T - O(n) where n is the number of elements
+        // S - O(log n) where n is the number of elements
+    ```
+    Commit the code to your branch. Make sure your code is compilable and successfully executes at least all the test cases given with the problem.  
+    ```
+    git status
+    git add <some-file>
+    git commit -m <A meaningful message>
+    git push origin <YourName>
+    ```
 5. Share the link to your main source file in Google Classroom so it can be reviewed.
