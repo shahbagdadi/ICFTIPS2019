@@ -16,10 +16,10 @@ git fetch origin
 git reset --hard origin/master   
 ```
 3. Create a branch for the problem you want to solve. The branch should follow the Naming Convention : **YourName-ProblemName**. 
-```
-git checkout -b Shahnawaz-IsValidBST
+``` git checkout -b Shahnawaz-IsValidBST ```
 4. Work on the problem and commit code to your branch. **Include the time and space complexity as a comment in your source code** like below
-``` // T - O(n) where n is the number of elements
+```     
+    // T - O(n) where n is the number of elements
     // S - O(log n) where n is the number of elements
 ```
 Commit the code to your branch
