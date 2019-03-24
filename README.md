@@ -18,7 +18,8 @@ git pull
 ``` git checkout -b <YourName>
     example - git checkout -b shahnawaz
  ```
-4. Work on the problem and commit code to your branch. **Include the time and space complexity as a comment in your source code** like below
+ As new problems are posted in master, do a ```git merge master``` in your branch to get the latest problems.
+4. Work on the problem and commit your code to your branch. **Include the time and space complexity as a comment in your source code** like below
 ```     
     // T - O(n) where n is the number of elements
     // S - O(log n) where n is the number of elements
