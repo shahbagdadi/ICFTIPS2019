@@ -22,7 +22,7 @@ git reset --hard origin/master
     // T - O(n) where n is the number of elements
     // S - O(log n) where n is the number of elements
 ```
-Commit the code to your branch
+Commit the code to your branch. Make sure your code is compilable and successfully executes at least the given test cases.
 ```
 git status
 git add <some-file>
@@ -46,3 +46,4 @@ Enter a title and description for your pull request. Remember you can use Github
 Finally, click on the green "Send pull request" button to finish creating the pull request.
 
 ![Send pull Request](./images/pr4.png)
+6. Your code will be reviewed and commented on. You should receive an email with the comments. If the code looks good then the PR will be accepted and the solution merged in the master branch.
