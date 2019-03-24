@@ -27,6 +27,7 @@ Commit the code to your branch. Make sure your code is compilable and successful
 ```
 git status
 git add <some-file>
-git commit
+git commit -m <A meaningful message>
 git push origin <YourName>
 ```
+5. Share the link to your main source file in Google Classroom so it can be reviewed.
