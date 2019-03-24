@@ -11,3 +11,5 @@ A --> B --> C --> D --> E --> F
 
 ```
 The above should return true.
+
+Follow up Question : Find the node where the cycle begins.
