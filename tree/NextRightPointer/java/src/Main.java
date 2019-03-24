@@ -1,10 +1,30 @@
-// T - O(?)
-// S - O(?)
+// T - O(n) - where n is the number of nodes
+// S - O(1)
+
 public class Main {
 
     public void connectTree(Node cur)
     {
+        while(cur != null){
+            Node rowHead = new Node(0);
+            Node prev = rowHead;
+            while(cur!=null){
+                if(cur.left != null) { prev.nextRight = cur.left; prev = prev.nextRight;}
+                if(cur.right != null) { prev.nextRight = cur.right; prev = prev.nextRight;}
+                cur = cur.nextRight;
+            }
+            cur = rowHead.nextRight;
+            print(cur);
+        }
 
+    }
+
+    void print(Node node){
+        while (node != null){
+            System.out.print(node.data + " -> ");
+            node = node.nextRight;
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
