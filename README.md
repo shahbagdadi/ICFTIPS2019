@@ -2,10 +2,12 @@
 Code repository for algorithm and data structure problems discussed during ICF TIPS 2019 Spring session
 
 ## Repository Structure
-    1. Each section is checked in under corresponding folder ex "recursion" , "trees", "arrays etc.
-    2. Each problem is filed under the corresponding section with its name.
-    3. Every problem has a README with the problem details and and sample input. Note : Not all possible cases may be covered by these input. You are encouraged to try your solution with all possible inputs.
-    4. The master branch will only have the questions. Students have to create a branch with their name and commit code to that branch. If you code in java then put your solution in java/src/main.java. If you code in python then put your source code in python/src/main.py
+1. Each section is checked in under corresponding folder ex "recursion" , "trees", "arrays etc.
+2. Each problem is filed under the corresponding section with its name.
+3. Every problem has a README with the problem details and and sample input.  
+Note : Not all possible cases may be covered by these input. You are encouraged to try your solution with all possible inputs.
+4. The master branch will only have the questions. Students have to create a branch with their name and commit code to that branch.   
+If you code in java then put your solution in java/src/main.java. If you code in python then put your source code in python/src/main.py
     
 ## Steps to submit code for review
 1. Clone the repo (initial)
