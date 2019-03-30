@@ -4,7 +4,7 @@
 public class Main {
 
     public boolean isBalanced(String s) {
-        
+
     }
 
     public static void main(String[] args) {
