@@ -4,7 +4,7 @@
 public class Main {
 
     public void decompose(String s) {
-        
+
     }
 
     public static void main(String[] args) {
