@@ -18,8 +18,8 @@ Print all paths in a tree
 
 """
 
-# T - O(?) where ? is ...
-# S - O(?) where ? is ...
+# T - O(?) where ? is ...O(h)
+# S - O(?) where ? is ...O(n)
 
 class Node:
 

@@ -4,8 +4,8 @@ Identical Tree
 Given 2 Trees with their root node , return true if both trees are identical.
 """
 
-# T - O(?) where ? is ...
-# S - O(?) where ? is ...
+# T - O(?) where ? is ...O(h)
+# S - O(?) where ? is ...O(n)
 
 class Node:
 
