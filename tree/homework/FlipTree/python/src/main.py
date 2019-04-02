@@ -28,6 +28,7 @@ class Node:
         self.right = None
 
 def print_inorder_tree(root):
+
     if root is None:
         return
     else:
@@ -43,7 +44,7 @@ def flip_a_tree(root):
     else:
         flip_a_tree(root.left)
         flip_a_tree(root.right)
-        # swap the left and right nodes of tree
+        # swap the left and right nodes of a tree
         root.left, root.right = root.right, root.left
 
 def main():
