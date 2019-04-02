@@ -24,6 +24,7 @@ def clone_a_tree(root):
         return None
     else:
         root2 = Node(root.data)
+        # print(root2.data)
         root2.left = clone_a_tree(root.left)
         root2.right = clone_a_tree(root.right)
 
