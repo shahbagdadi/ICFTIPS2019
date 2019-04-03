@@ -27,11 +27,29 @@ class Node:
 
 def iterative_inorder(root):
 
-    if root is None:
-        return None
+    curr = root
+    stack = []
+    complete = 0
 
-    while (root.left is not None):
-        root.left = root.left
+    while not complete:
+
+        if curr is not None:
+            stack.append(curr)
+
+            curr = curr.left
+
+        else:
+
+            if len(stack) > 0:
+
+                curr = stack.pop()
+                print(curr.data, '->', end=' ')
+
+                curr = curr.right
+
+            else:
+                complete = 1
+
 
 def main():
     # node1 tree
@@ -42,6 +60,8 @@ def main():
     node1.left.right = Node(3)
     node1.right.left = Node(5)
     node1.right.right = Node(7)
+
+    print(iterative_inorder(node1))
 
 if __name__ == '__main__':
   main()
