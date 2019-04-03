@@ -18,7 +18,7 @@ Deleting 20 should result in
 """
 
 # T - O(?) where ? is ... O(log n) if tree is balanced height of the tree; O(n) if tree is skewed
-# S - O(?) where ? is ...
+# S - O(?) where ? is ...O(n)
 
 class Node:
 
