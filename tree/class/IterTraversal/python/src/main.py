@@ -34,8 +34,8 @@ def iterative_inorder(root):
     while not complete:
 
         if curr is not None:
-            stack.append(curr)
 
+            stack.append(curr)
             curr = curr.left
 
         else:

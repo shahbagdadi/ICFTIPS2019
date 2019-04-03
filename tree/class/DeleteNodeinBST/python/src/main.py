@@ -27,14 +27,14 @@ class Node:
         self.left = None
         self.right = None
 
-def print_inodrdertree(root):
+def print_inordertree(root):
 
     if root is None:
         return None
     else:
-        print_inodrdertree(root.left)
+        print_inordertree(root.left)
         print(root.data, '->', end=' ')
-        print_inodrdertree(root.right)
+        print_inordertree(root.right)
 
 def get_min(root):
 
@@ -96,7 +96,7 @@ def main():
     node1.left.right = Node(16)
 
     print("Print a binary search tree by using inoder traversal before deleting a node: ")
-    print(print_inodrdertree(node1))
+    print(print_inordertree(node1))
 
     # deleting a root node (20) from a BST (min from right)
     delete_node_in_bst_min_from_right(node1, 20)
@@ -105,7 +105,7 @@ def main():
 
     print("Print a binary search tree by using inoder traversal after deleting a node")
     print("by using min from right method")
-    print(print_inodrdertree(node1))
+    print(print_inordertree(node1))
 
     # deleting a root node (20) from a BST (max from left)
     delete_node_in_bst_max_from_left(node1, 20)
@@ -114,7 +114,7 @@ def main():
 
     print("Print a binary search tree by using inoder traversal after deleting a node")
     print("by using max from  left method")
-    print(print_inodrdertree(node1))
+    print(print_inordertree(node1))
 
 
 if __name__ == '__main__':
