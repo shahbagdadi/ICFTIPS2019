@@ -12,8 +12,8 @@ The postorder traversal of this tree should print
 1 3 2 5 7 6 4
 """
 
-# T - O(?) where ? is ...
-# S - O(?) where ? is ...
+# T - O(?) where ? is ...O(n)
+# S - O(?) where ? is ...O(n)
 
 class Node:
 
@@ -22,6 +22,7 @@ class Node:
         self.left = None
         self.right = None
 
+# postorder traversal using recursion
 def print_postorder(root):
 
     if root is None:
@@ -31,9 +32,29 @@ def print_postorder(root):
     print_postorder(root.right)
     print(root.data, '->', end=' ')
 
+# postorder traversal using two stacks
 def iterative_postorder(root):
 
-    pass
+    if root is None:
+        return None
+
+    stack1 = []
+    stack2 = []
+
+    stack1.append(root)
+
+    while stack1:
+        current = stack1.pop()
+        stack2.append(current)
+
+        if current.left:
+            stack1.append(current.left)
+        if current.right:
+            stack1.append(current.right)
+
+    while stack2:
+        current = stack2.pop()
+        print(current.data, '->', end=' ')
 
 def main():
     # node1 tree
@@ -45,9 +66,14 @@ def main():
     node1.right.left = Node(5)
     node1.right.right = Node(7)
 
+    print("Print postorder traversal of a binary tree using recursion")
     print(print_postorder(node1))
 
+    print("Print postorder traversal of a binary tree w/o recursion and using two stacks")
     print(iterative_postorder(node1))
+
+    print("Print postorder traversal of a binary tree w/o recursion and using one stack")
+    # print(iterative_postorder_onestack(node1))
 
 
 if __name__ == '__main__':
