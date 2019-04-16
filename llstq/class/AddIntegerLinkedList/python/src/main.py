@@ -134,15 +134,13 @@ def main():
     # print(lst3.print_list())
 
     lst4 = LinkedList()
-    n1 = lst1.head
-    n2 = lst2.head
+    # n1 = lst1.head
+    # n2 = lst2.head
 
-    lst4.add_list(n1, n2)
+    lst4.add_list(lst1.head, lst2.head)
 
     print("print resulted linked list 4")
     print(lst4.print_list())
-
-
 
 if __name__ == '__main__':
   main()
