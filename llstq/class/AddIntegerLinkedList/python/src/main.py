@@ -31,6 +31,7 @@ class LinkedList:
         new_node.next = self.head
         self.head = new_node
 
+    # function insert new node at the end
     def add_element_last(self, element):
 
         new_node = Node(element)
@@ -44,6 +45,7 @@ class LinkedList:
                 current = current.next
             current.next = new_node
 
+    # print linked list
     def print_list(self):
 
         current = self.head
@@ -52,6 +54,7 @@ class LinkedList:
             print(current.data, '->', end=' ')
             current = current.next
 
+    # add given integer linked lists
     def add_list(self, n1, n2):
 
         if n1 is None:
