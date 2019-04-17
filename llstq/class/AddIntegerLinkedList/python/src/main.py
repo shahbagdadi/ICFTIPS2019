@@ -125,22 +125,37 @@ def main():
     print("print linked list 2")
     print(lst2.print_list())
 
-    # lst3 = LinkedList()
-    # lst3.add_element_last(1)
-    # lst3.add_element_last(2)
-    # lst3.add_element_last(3)
-    #
-    # print("print resulted linked list 3")
-    # print(lst3.print_list())
-
-    lst4 = LinkedList()
+    lst3 = LinkedList()
     # n1 = lst1.head
     # n2 = lst2.head
 
-    lst4.add_list(lst1.head, lst2.head)
+    lst3.add_list(lst1.head, lst2.head)
 
-    print("print resulted linked list 4")
-    print(lst4.print_list())
+    print("print resulted linked list 3")
+    print(lst3.print_list())
+
+    lst11 = LinkedList()
+    lst11.add_element_last(3)
+    lst11.add_element_last(5)
+    lst11.add_element_last(4)
+
+    lst22 = LinkedList()
+    lst22.add_element_last(6)
+    lst22.add_element_last(7)
+    lst22.add_element_last(5)
+
+    print("print linked list11")
+    print(lst11.print_list())
+
+    print("print linked list22")
+    print(lst22.print_list())
+
+    lst33 = LinkedList()
+    lst33.add_list(lst11.head, lst22.head)
+
+    print("print resulted linked list33")
+    print(lst33.print_list())
+
 
 if __name__ == '__main__':
   main()
