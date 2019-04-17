@@ -42,6 +42,10 @@ class Stack:
         if self.stack:
             return self.stack[-1]
 
+    def print_stack(self):
+        for i in range(len(self.stack)):
+            print(self.stack[i])
+
 
 class MinStack:
 
@@ -58,7 +62,7 @@ class MinStack:
 
     def pop(self):
 
-        val = self.min.pop()
+        val = self.val.pop()
 
         if val == self.min.peek():
             self.min.pop()
@@ -71,18 +75,45 @@ class MinStack:
     def get_min(self):
         return self.min.peek()
 
+    def print_stack(self):
+        self.min.print_stack()
+
 def main():
     min_stack = MinStack()
     min_stack.push(-2)
     min_stack.push(0)
     min_stack.push(-3)
+    print("pushed elements in min stack")
+    min_stack.print_stack()
+    print("get the min stack element")
     print(min_stack.get_min())
     # --> Returns - 3
+    print("pop operation")
     min_stack.pop()
-
+    print("remaining min stack elements")
+    min_stack.print_stack()
+    print("get the min stack element")
     print(min_stack.get_min())
     # --> Returns - 2
 
+    print()
+
+    print("another test case")
+    min_stack1 = MinStack()
+    min_stack1.push(-2)
+    min_stack1.push(3)
+    min_stack1.push(-7)
+    min_stack1.push(-1)
+    print("pushed elements in min stack")
+    min_stack1.print_stack()
+    print("get the min stack element")
+    print(min_stack1.get_min())
+    print("pop operation")
+    min_stack1.pop()
+    print("remaining min stack elements")
+    min_stack1.print_stack()
+    print("get the min stack element")
+    print(min_stack1.get_min())
 
 if __name__ == '__main__':
   main()
